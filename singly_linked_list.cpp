@@ -31,6 +31,7 @@ void linked_list :: append_to(int x)
 {
 	Node *cur = new Node;
 	cur->data = x;
+	cur->next = NULL;
 	if(head == NULL)
 	{
 		head = cur;
@@ -58,7 +59,7 @@ void linked_list :: display()
 		Node *temp = head;
 		while(temp != NULL)
 		{
-			cout<<temp->data;
+			cout<<temp->data<<endl;
 			temp = temp->next;
 		}
 	}
@@ -68,7 +69,8 @@ int main()
 {
 	linked_list root;
 	root.append_to(6);
-	//root.append_to(9);
+	root.append_to(9);
+	root.append_to(10);
 	root.display();
 	return 0;	
 }
