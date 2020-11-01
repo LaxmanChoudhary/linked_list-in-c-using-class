@@ -1,2 +1,2 @@
 # linked_list-in-c-using-class
-singly linked list with basic operations in c++
+just random c/c++ practixw, btw C my first love
